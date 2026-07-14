@@ -1,0 +1,16 @@
+// Voor dit project een aparte .vscode
+
+{
+  "version": 4,
+  "configurations": [
+    {
+      "name": "SearchEngineCpp",
+      "includePath": [
+        "${workspaceFolder}/srd/**"
+      ],
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-msvc-x64",
+      "compilerPath": "cl.exe"
+    }
+  ]
+}

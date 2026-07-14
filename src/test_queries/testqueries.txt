@@ -1,0 +1,20 @@
+//13-6-2026: de testqueries zelf:
+
+hello
+hello AND amsterdam
+hello AND random
+hello OR random
+hello AND (random OR project)
+(hello)
+hello AND (hello OR random)
+hello OR (random AND project)
+(((hello)))
+hello AND (
+hello AND ()
+NOT (hello OR random)
+
+//15-6-2026: Erbij gezet
+hello => a.txt
+hello AND amsterdam => a.txt
+hello OR random => a.txt b.txt
+hello AND random => 

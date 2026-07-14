@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run SearchEngine",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": ".\\a.exe",
+      "preLaunchTask": "build cpp"
+    }
+  ]
+}

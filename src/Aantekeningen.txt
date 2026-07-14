@@ -1,0 +1,101 @@
+Zoekmachine
+
+C++17
+
+
+Die stappen heten dus:
+- building blocks
+- modules
+- components
+- pipeline steps
+- abstractions
+
+
+Voorbeeld pipeline
+stel 
+- a.txt
+Hello World
+- b.txt
+Hello world abstractions
+Bye world
+
+Start
+1) Get Files: we halen de files op en stoppen deze in een vector.
+resultaat [a.text], [b.text]
+
+2) Read files
+string content = readFile(file);
+Dit wordt voor: 
+a.txt: "Hello world\nHello AI\n"
+b.txt: "Hello world AI\nBye world\n"
+
+3) Text Processing (Tokenize)
+tokenize(content)
+a.txt wordt: ["hello", "world", "hello", "ai"]
+b.txt wordt: ["hello", "world", "ai", "bye", "world"]
+
+4) Frequency map
+a.txt:
+buildFrequencyMap(words)
+hello → 2
+world → 1
+ai → 1
+
+b.txt:
+hello → 1
+world → 2
+ai → 1
+bye → 1
+
+5) Inverted Index(globaal systeem)
+We combineren alles (Soort bucketsoort)
+word → set<files>
+hello → {a.txt, b.txt}
+world → {a.txt, b.txt}
+ai    → {a.txt, b.txt}
+bye   → {b.txt}
+
+6) MultiSearch(Intersection)
+Als query: "hello bye"
+hello → {a.txt, b.txt}
+Beide komen voor in b.txt: Intersection
+bye   → {b.txt}
+
+7) Ranking
+Document
+
+
+
+7-5-2026: heb dus nu:
+✅ modulaire C++ structuur
+✅ consistente naming conventions
+✅ werkende compiler setup
+✅ parser module
+✅ indexer module
+✅ search module
+✅ inverted index
+✅ multi search
+✅ ranking basis
+✅ SRP-refactor succesvol uitgevoerd
+
+28-5-2026:
+Wat er nog in verwerken:
+
+
+- AND NOT en XOR
+- Koppeling met SQL
+- Python visualisatie
+- AI Agent?
+- CI/CD pipeline? of testen of is dat hetzelfde?
+- INheritence, Polymorphisme, Datahiding etc
+- Design Patterns toepassen waar nodig en handig
+- System Design Toepassen
+- DSA meer toepassen
+- MultiThreading Meer toepassen
+- Website/ visualisatie
+- Crawler (voor website)
+- Modern C++
+- Meerdere gebruikers (users en superusers)
+- loggingsysteem
+- inlogsysteem
+- GUI framework voor C++ (iets visueels)
