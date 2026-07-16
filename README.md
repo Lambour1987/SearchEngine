@@ -58,8 +58,10 @@ Ranking
     ▼
 Zoekresultaten
 ```
-
----
+De architectuur en gegevensstroom van het project zijn verder uitgewerkt in een diagram gemaakt met **draw.io**.
+**
+De publieke versie van dit diagram bevat de uitgewerkte structuur van het systeem. Persoonlijke ontwikkelnotities, ideeën en tijdelijke opmerkingen zijn verwijderd om de documentatie overzichtelijk te houden.
+---**
 
 ## Toekomstige ontwikkeling
 
